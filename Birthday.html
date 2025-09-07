@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Joshua 🎉</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      z-index: 2;
+      position: relative;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #ff5733;
+      margin-bottom: 10px;
+      animation: glow 2s infinite alternate;
+    }
+    h2 {
+      font-size: 1.6em;
+      color: #444;
+    }
+    p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      font-size: 1.1em;
+      margin: 5px 0;
+      padding: 8px;
+      background: #ffe6e6;
+      border-radius: 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+    ul li:nth-child(1) { animation-delay: 0.5s; }
+    ul li:nth-child(2) { animation-delay: 1s; }
+    ul li:nth-child(3) { animation-delay: 1.5s; }
+    ul li:nth-child(4) { animation-delay: 2s; }
+    ul li:nth-child(5) { animation-delay: 2.5s; }
+
+    .emoji {
+      font-size: 1.3em;
+      margin-right: 6px;
+    }
+
+    /* Glowing effect */
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff9966, 0 0 20px #ff5733; }
+      to { text-shadow: 0 0 20px #ff5733, 0 0 40px #ff3300; }
+    }
+
+    /* Balloons */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      font-size: 2em;
+      animation: floatUp 8s linear infinite;
+    }
+    .balloon:nth-child(1) { left: 10%; animation-delay: 0s; color: red; }
+    .balloon:nth-child(2) { left: 30%; animation-delay: 2s; color: blue; }
+    .balloon:nth-child(3) { left: 50%; animation-delay: 4s; color: green; }
+    .balloon:nth-child(4) { left: 70%; animation-delay: 6s; color: orange; }
+    .balloon:nth-child(5) { left: 90%; animation-delay: 1s; color: purple; }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+
+    /* Fade-in effect */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Balloons -->
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+
+  <!-- Birthday Card -->
+  <div class="card">
+    <h1>🎂 Happy Birthday 🎂</h1>
+    <h2>Olanrewaju Joshua</h2>
+    <p>Age: <strong>18</strong></p>
+    <h3>Hobbies:</h3>
+    <ul>
+      <li><span class="emoji">🥁</span> Playing Drums</li>
+      <li><span class="emoji">📖</span> Reading</li>
+      <li><span class="emoji">🎸</span> Playing Musical Instruments</li>
+      <li><span class="emoji">✂️</span> Crafting & DIY Projects</li>
+      <li><span class="emoji">🎨</span> Animation & Graphic Design</li>
+    </ul>
+    <p>Wishing you a wonderful year ahead full of joy and success! 🎉</p>
+  </div>
+</body>
+</html>
